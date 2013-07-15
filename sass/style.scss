@@ -1,0 +1,102 @@
+@import "compass";
+
+@import "normalize";
+
+@import "colors";
+@import "icons";
+
+%clearfix{
+	@include clearfix;
+}
+body, html{
+	height: 100%;
+}
+body{
+	@include background-image(radial-gradient(center, ellipse cover, #429bff 0%,#006be3 50%,#0046a6 100%));
+}
+body{
+	font-size: 100%;
+	line-height: 1.5;
+}
+h1,h2{
+	font-family: 'Acme', sans-serif;
+	font-weight: normal;
+}
+h1{
+	font-size: 3em;
+	line-height: 60px;
+}
+h2{
+	font-size: 2em;
+	line-height: 36px;
+}
+.card{
+	text-align: center;
+	margin: 200px auto 0 auto;
+	max-width: 420px;
+	background-color: rgba(255,255,255,.35);
+	padding: 36px;
+	@include box-sizing(border-box);
+	@include clearfix;
+	@include border-radius(5px);
+	@include box-shadow(0 5px 13px rgba(0, 0, 0, .4), inset 0 2px 2px rgba(255,255,255,.4));
+	h1{
+		margin: 24px 0 0 0;
+	}
+	h2{
+		margin: 0 0 24px 0;
+	}
+	p{
+		margin: 0;
+	}
+	.photo{
+		border-radius: 90px;
+		width: 180px;
+		height: 180px;
+		margin: 24px auto;
+		border: 1px solid black;
+		overflow: hidden;
+		img{
+			display: block;
+		}
+	}
+}
+.social-nav{
+	margin-top: 24px;
+	a{
+		display: inline-block;
+		margin-left: 12px;
+		width: 32px;
+		height: 32px;
+		&:first-child{
+			margin-left: 0;
+		}
+		.no-touch &{
+			opacity: .6;
+			@include transition(opacity .2s ease-in-out);
+			&:hover{
+				opacity: 1;
+			}
+		}
+	}
+}
+@media screen and (max-width: 440px){
+	h1{
+		font-size: 2.5em;
+		line-height: 48px;
+	}
+	h2{
+		font-size: 1.5em;
+		line-height: 24px;
+	}
+	.card{
+		margin: 12px;
+		padding: 24px;
+	}
+	.social-nav{
+		a{
+			width: 26px;
+			height: 26px;
+		}
+	}
+}
