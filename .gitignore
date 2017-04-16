@@ -1,4 +1,23 @@
-_site
-*.map
+# Folder view configuration files
 .DS_Store
+Desktop.ini
+
+# Thumbnail cache files
+._*
+Thumbs.db
+
+# Files that might appear on external disks
+.Spotlight-V100
+.Trashes
+
+# npm
+node_modules
+npm-debug.log
+
+# test files
+coverage
+.nyc_output
+
+# build and temp folders
 .sass-cache
+_site
