@@ -1,3 +1,4 @@
+source: ./src
 exclude: ['README.md']
 sass:
   style: compressed
