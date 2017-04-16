@@ -17,8 +17,8 @@
   "main": "",
   "scripts": {
     "postinstall": "npm run -s normalize && npm run -s modernizr",
-    "normalize": "cp -rf node_modules/normalize.css/normalize.css src/_sass/normalize.scss ",
-    "modernizr": "modernizr -c modernizr-config.json -d src/modernizr.js",
+    "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss ",
+    "modernizr": "modernizr -c modernizr-config.json",
     "start": "jekyll serve",
     "lint": "stylelint '**/*.scss' --syntax scss"
   },
