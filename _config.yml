@@ -1,3 +1,1 @@
 exclude: ['svg', 'README.md', 'style.css.map']
-gems:
-  - sass
