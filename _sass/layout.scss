@@ -1,0 +1,21 @@
+%clearfix {
+  overflow: auto;
+}
+
+%fullheight {
+  height: 100%;
+}
+
+html {
+  @extend %fullheight;
+}
+
+body {
+  @extend %fullheight;
+
+  margin: 0;
+
+  .card {
+    margin: auto;
+  }
+}

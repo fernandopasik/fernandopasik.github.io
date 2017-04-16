@@ -1,0 +1,33 @@
+@import
+  "settings/colors",
+  "settings/fonts";
+
+body {
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-family: $base-font-family;
+}
+
+%margins {
+  margin-top: $base-line-grid;
+  margin-bottom: $base-line-grid;
+}
+
+p {
+  @extend %margins;
+}
+
+h1 {
+  @extend %margins;
+
+  font-size: 3em;
+  font-weight: 400;
+  line-height: $base-line-grid * 2;
+}
+
+h2 {
+  @extend %margins;
+
+  font-size: 2em;
+  font-weight: 400;
+}
