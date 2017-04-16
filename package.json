@@ -1,0 +1,34 @@
+{
+  "name": "fernandopasik.github.io",
+  "version": "0.1.0",
+  "description": "My personal website",
+  "keywords": [
+    "website"
+  ],
+  "homepage": "https://github.com/fernandopasik/fernandopasik.github.io",
+  "bugs": "https://github.com/fernandopasik/fernandopasik.github.io/issues",
+  "license": "MIT",
+  "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
+  "contributors": [],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fernandopasik/fernandopasik.github.io.git"
+  },
+  "main": "",
+  "scripts": {
+    "postinstall": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss",
+    "start": "jekyll serve",
+    "lint": "stylelint '**/*.scss' --syntax scss"
+  },
+  "dependencies": {
+    "normalize.css": "^6.0.0"
+  },
+  "devDependencies": {
+    "stylelint-config-fernandopasik": "^0.1.3",
+    "stylelint-webpack-plugin": "^0.7.0"
+  },
+  "engines": {
+    "node": ">=6.0.0",
+    "npm": ">=3.0.0"
+  }
+}
