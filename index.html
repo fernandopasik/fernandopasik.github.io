@@ -2,26 +2,42 @@
 layout: default
 ---
 
-<div class="card" itemscope itemtype="http://schema.org/Person">
+<div class="card">
 
 	<header>
-		<div class="photo"><img itemprop="image" src="fernando-pasik.png" /></div>
-		<h1 itemprop="name"><span itemprop="givenName">Fernando</span> <span itemprop="familyName">Pasik</span></h1>
-		<h2 itemprop="jobTitle">Front-End Developer</h2>
+		<div class="photo"><img src="fernando-pasik.png" alt="Fernando Pasik" /></div>
+		<h1>Fernando Pasik</h1>
+		<h2>Front-End Engineer</h2>
 	</header>
 
-	<section class="bio" itemprop="description">
+	<section class="bio">
 		<p>Hi! I'm  a passionate developer working together with designers to always create <strong>the best User Experience</strong>.  I'm always eager to embrace the latest Web Standards and  to make sites and apps for mobile, desktop and <strong>all kind of devices</strong>.</p>
 	</section>
 
 	<footer>
 		<nav class="social-nav">
-			<a itemprop="url" target="_blank" class="icon-twitter"    aria-label="Twitter Profile"          href="http://twitter.com/fernandopasik"></a>
-			<a itemprop="url" target="_blank" class="icon-linkedin"   aria-label="LinkedIn Profile"         href="http://www.linkedin.com/in/fernandopasik"></a>
-			<a itemprop="url" target="_blank" class="icon-googleplus" aria-label="Google+ Profile" rel="publisher" href="http://plus.google.com/101914036364944081553?rel=author"></a>
-			<a itemprop="url" target="_blank" class="icon-github"     aria-label="Github Repositories"      href="http://github.com/fernandopasik"></a>
-			<a itemprop="url" target="_blank" class="icon-slideshare" aria-label="SlideShare Presentations" href="http://www.slideshare.net/fernandopasik"></a>
-			<a itemprop="url" target="_blank" class="icon-quora"      aria-label="Quora Profile"            href="http://www.quora.com/Fernando-Pasik"></a>
+			<a target="_blank" class="icon-github" aria-label="Github Repositories"      href="http://github.com/fernandopasik"></a>
+			<a target="_blank" class="icon-linkedin" aria-label="LinkedIn Profile"         href="http://www.linkedin.com/in/fernandopasik"></a>
+			<a target="_blank" class="icon-twitter" aria-label="Twitter Profile"          href="http://twitter.com/fernandopasik"></a>
+			<a target="_blank" class="icon-googleplus" aria-label="Google+ Profile" rel="publisher" href="http://plus.google.com/101914036364944081553?rel=author"></a>
 		</nav>
 	</footer>
 </div>
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Person",
+  "name": "Fernando Pasik",
+	"jobTitle": "Front-End Engineer",
+	"image": "fernando-pasik.png",
+	"description": "Hi! I'm  a passionate developer working together with designers to always create the best User Experience.  I'm always eager to embrace the latest Web Standards and  to make sites and apps for mobile, desktop and all kind of devices",
+	"url": "http://fernandopasik.com",
+	"sameAs": [
+		"http://github.com/fernandopasik",
+		"http://www.linkedin.com/in/fernandopasik",
+		"http://twitter.com/fernandopasik",
+		"http://plus.google.com/101914036364944081553?rel=author"
+	]
+}
+</script>
