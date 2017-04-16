@@ -38,7 +38,13 @@
       opacity: 0.6;
       transition: opacity 0.2s ease-in-out;
 
-      &:hover {
+      .no-inlinesvg & {
+        display: block;
+        width: auto;
+      }
+
+      .touchevents &,
+      .no-touchevents &:hover {
         opacity: 1;
       }
 
@@ -49,6 +55,19 @@
       svg {
         max-width: 100%;
         max-height: 100%;
+
+        .no-inlinesvg & {
+          display: none;
+        }
+      }
+
+      .sr-only {
+        .no-inlinesvg & {
+          position: static;
+          width: auto;
+          height: auto;
+          clip: rect(0, 0, 0, 0);
+        }
       }
     }
   }
