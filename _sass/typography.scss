@@ -31,3 +31,24 @@ h2 {
   font-size: 2em;
   font-weight: 400;
 }
+
+@media (max-width: 440px) {
+  h1 {
+    font-size: 2.5em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+    line-height: $base-line-grid;
+  }
+}
+
+@media (max-width: 360px) {
+  h1 {
+    font-size: 2.2em;
+  }
+
+  h2 {
+    font-size: 1.3em;
+  }
+}

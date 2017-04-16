@@ -72,3 +72,16 @@
     }
   }
 }
+
+@media (max-width: 440px) {
+  .card {
+    padding: $base-line-grid ($base-line-grid / 2);
+
+    &-nav {
+      a {
+        width: $base-line-grid;
+        height: $base-line-grid;
+      }
+    }
+  }
+}
