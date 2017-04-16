@@ -77,12 +77,12 @@ h2{
 		&:first-child{
 			margin-left: 0;
 		}
-		.no-touch &{
-			opacity: .6;
-			transition: opacity .2s ease-in-out;
-			&:hover{
-				opacity: 1;
-			}
+
+		opacity: .6;
+		transition: opacity .2s ease-in-out;
+
+		&:hover{
+			opacity: 1;
 		}
 	}
 }
