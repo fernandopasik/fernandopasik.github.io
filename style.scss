@@ -1,4 +1,5 @@
-@import "compass";
+---
+---
 
 @import "normalize";
 
@@ -6,13 +7,17 @@
 @import "icons";
 
 %clearfix{
-	@include clearfix;
+	overflow: auto;
 }
 body, html{
 	height: 100%;
 }
 body{
-	@include background-image(radial-gradient(center, ellipse cover, #429bff 0%,#006be3 50%,#0046a6 100%));
+	background-image: -webkit-gradient(radial, 50%, 0, 50%, 100, color-stop(0%, #429bff), color-stop(50%, #006be3), color-stop(100%, #0046a6));
+  background-image: -webkit-radial-gradient(center, ellipse cover, #429bff 0%, #006be3 50%, #0046a6 100%);
+  background-image: -moz-radial-gradient(center, ellipse cover, #429bff 0%, #006be3 50%, #0046a6 100%);
+  background-image: -o-radial-gradient(center, ellipse cover, #429bff 0%, #006be3 50%, #0046a6 100%);
+  background-image: radial-gradient(center, ellipse cover, #429bff 0%, #006be3 50%, #0046a6 100%);
 }
 body{
 	font-size: 100%;
@@ -31,15 +36,16 @@ h2{
 	line-height: 36px;
 }
 .card{
+	@extend %clearfix;
 	text-align: center;
-	margin: 200px auto 0 auto;
+	margin: 100px auto 0 auto;
 	max-width: 420px;
 	background-color: rgba(255,255,255,.35);
 	padding: 36px;
-	@include box-sizing(border-box);
-	@include clearfix;
-	@include border-radius(5px);
-	@include box-shadow(0 5px 13px rgba(0, 0, 0, .4), inset 0 2px 2px rgba(255,255,255,.4));
+	box-sizing: border-box;
+	border-radius: 5px;
+	box-shadow: 0 5px 13px rgba(0, 0, 0, .4), inset 0 2px 2px rgba(255,255,255,.4);
+
 	h1{
 		margin: 24px 0 0 0;
 	}
@@ -73,7 +79,7 @@ h2{
 		}
 		.no-touch &{
 			opacity: .6;
-			@include transition(opacity .2s ease-in-out);
+			transition: opacity .2s ease-in-out;
 			&:hover{
 				opacity: 1;
 			}
