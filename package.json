@@ -24,11 +24,10 @@
   },
   "dependencies": {
     "modernizr": "^3.5.0",
-    "normalize.css": "^6.0.0"
+    "normalize.css": "^7.0.0"
   },
   "devDependencies": {
-    "stylelint-config-fernandopasik": "^0.1.3",
-    "stylelint-webpack-plugin": "^0.7.0"
+    "stylelint-config-fernandopasik": "^0.1.3"
   },
   "engines": {
     "node": ">=6.0.0",
