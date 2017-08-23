@@ -7,7 +7,13 @@ layout: default
 	<article class="card" role="main">
 
 		<header>
-			<div class="card-photo"><img src="fernando-pasik.png" height="180" width="180" alt="Fernando Pasik" /></div>
+			<div class="card-photo">
+				<picture>
+					<source srcset="fernando-pasik.webp" type="image/webp">
+					<source srcset="fernando-pasik.png" type="image/jpeg">
+					<img src="fernando-pasik.png" height="180" width="180" alt="Fernando Pasik" />
+				</picture>
+			</div>
 			<h1 class="card-title">Fernando Pasik</h1>
 			<h2 class="card-subtitle">Front-End Engineer</h2>
 		</header>
