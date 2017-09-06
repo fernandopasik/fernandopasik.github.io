@@ -4,6 +4,6 @@
   "start_url": ".",
   "theme_color": "#429bff",
   "background_color": "#006be3",
-  "display": "browser",
+  "display": "minimal-ui",
   "orientation": "portrait"
 }
