@@ -42,6 +42,13 @@
   })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
   ga('create', 'UA-5425682-4', 'auto');
   ga('send', 'pageview');
+
+	function trackOutboundLink(url) {
+		ga('send', 'event', 'outbound', 'click', url, {
+			'transport': 'beacon',
+			'hitCallback': function(){document.location = url;}
+		});
+	}
 </script>
 
 <script src="modernizr.js"></script>
