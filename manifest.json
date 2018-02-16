@@ -1,7 +1,8 @@
 {
   "short_name": "F.E.Pasik",
   "name": "Fernando Pasik",
-  "start_url": "/",
+  "start_url": "/?homescreen=1",
+  "scope": "/",
   "theme_color": "#429bff",
   "background_color": "#006be3",
   "display": "minimal-ui",
