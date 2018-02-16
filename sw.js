@@ -9,7 +9,8 @@ self.addEventListener('install', function(e) {
         '/style.css',
         '/fernando-pasik.png',
         '/fernando-pasik.webp'
-      ]);
+      ])
+      .then(function() { return self.skipWaiting(); });
     })
   );
 });
