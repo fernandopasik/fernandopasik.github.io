@@ -1,7 +1,13 @@
 {% assign data = site.data.site %}
 <nav class="card-nav">
 	{% for profile in data.profiles %}
-	<a target="_blank" rel="noopener" href="{{ profile.link }}" title="{{ profile.label }}">
+	<a
+		target="_blank"
+		rel="noopener"
+		href="{{ profile.link }}"
+		title="{{ profile.label }}"
+		data-vars-outbound-link="{{ profile.link }}"
+	>
 		<svg aria-hidden="true"><use xlink:href="icons.svg#{{ profile.id }}"></use></svg>
 	</a>
 	{% endfor %}
