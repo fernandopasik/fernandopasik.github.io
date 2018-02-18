@@ -1,0 +1,24 @@
+name: Fernando Pasik
+jobTitle: Front-End Engineer
+photo: fernando-pasik.png
+url: https://fernandopasik.com
+bio: Hi! I'm a passionate developer working together with designers to always create the best User Experience. I'm always eager to embrace the latest Web Standards and to make sites and apps for mobile, desktop and all kind of devices
+profiles:
+  - id: github
+    label: Github Repositories
+    link: https://github.com/fernandopasik
+  - id: linkedin
+    label: LinkedIn Profile
+    link: https://www.linkedin.com/in/fernandopasik
+  - id: twitter
+    label: Twitter Profile
+    link: https://twitter.com/fernandopasik
+  - id: medium
+    label: Medium Articles
+    link: https://medium.com/@fernandopasik
+  - id: stackoverflow
+    label: Stack Overflow Profile
+    link: https://stackoverflow.com/users/1877754/fernandopasik?tab=profile
+  - id: googleplus
+    label: Google+ Profile
+    link: https://plus.google.com/101914036364944081553?rel=author

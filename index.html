@@ -23,78 +23,11 @@ layout: default
 		</section>
 
 		<footer>
-			<nav class="card-nav">
-				<a
-					target="_blank"
-					rel="noopener"
-					href="https://github.com/fernandopasik"
-				>
-					<span class="sr-only">Github Repositories</span>
-					<svg aria-hidden="true"><use xlink:href="icons.svg#github"></use></svg>
-				</a>
-				<a
-					target="_blank"
-					rel="noopener"
-					href="https://www.linkedin.com/in/fernandopasik"
-				>
-					<span class="sr-only">LinkedIn Profile</span>
-					<svg aria-hidden="true"><use xlink:href="icons.svg#linkedin"></use></svg>
-				</a>
-				<a
-					target="_blank"
-					rel="noopener"
-					href="https://twitter.com/fernandopasik"
-				>
-					<span class="sr-only">Twitter Profile</span>
-					<svg aria-hidden="true"><use xlink:href="icons.svg#twitter"></use></svg>
-				</a>
-				<a
-					target="_blank"
-					rel="noopener"
-					href="https://medium.com/@fernandopasik"
-				>
-					<span class="sr-only">Medium Articles</span>
-					<svg aria-hidden="true"><use xlink:href="icons.svg#medium"></use></svg>
-				</a>
-				<a
-					target="_blank"
-					rel="noopener"
-					href="https://stackoverflow.com/users/1877754/fernandopasik?tab=profile"
-				>
-					<span class="sr-only">Stack Overflow Profile</span>
-					<svg aria-hidden="true"><use xlink:href="icons.svg#stackoverflow"></use></svg>
-				</a>
-				<a
-					target="_blank"
-					rel="noopener"
-					href="https://plus.google.com/101914036364944081553?rel=author"
-				>
-					<span class="sr-only">Google+ Profile</span>
-					<svg aria-hidden="true"><use xlink:href="icons.svg#googleplus"></use></svg>
-				</a>
-			</nav>
+			{% include card-nav.html %}
 		</footer>
 
 	</article>
 
 </div>
 
-<script type="application/ld+json">
-{
-	"@context": "https://schema.org",
-	"@type": "Person",
-	"name": "Fernando Pasik",
-	"jobTitle": "Front-End Engineer",
-	"image": "https://fernandopasik.com/fernando-pasik.png",
-	"description": "Hi! I'm a passionate developer working together with designers to always create the best User Experience. I'm always eager to embrace the latest Web Standards and  to make sites and apps for mobile, desktop and all kind of devices",
-	"url": "https://fernandopasik.com",
-	"sameAs": [
-		"https://github.com/fernandopasik",
-		"https://www.linkedin.com/in/fernandopasik",
-		"https://twitter.com/fernandopasik",
-		"https://medium.com/@fernandopasik",
-		"https://stackoverflow.com/users/1877754/fernandopasik?tab=profile",
-		"https://plus.google.com/101914036364944081553?rel=author"
-	]
-}
-</script>
+{% include schema.html %}

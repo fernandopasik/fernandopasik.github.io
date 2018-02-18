@@ -1,0 +1,15 @@
+{% assign data = site.data.site %}
+<script type="application/ld+json">
+{
+	"@context": "https://schema.org",
+	"@type": "Person",
+	"name": "{{ data.name }}",
+	"jobTitle": "{{ data.jobTitle }}",
+	"image": "{{ data.url }}/{{ data.photo }}",
+	"description": "{{ data.description }}",
+	"url": "{{ data.url }}",
+	"sameAs": [{% for profile in data.profiles %}
+		"{{ profile.link }}",{% endfor %}
+	]
+}
+</script>
