@@ -7,19 +7,11 @@ layout: default
 	<article class="card" role="main">
 
 		<header>
-			<div class="card-photo">
-				<picture>
-					<source srcset="fernando-pasik.webp" type="image/webp">
-					<source srcset="fernando-pasik.png" type="image/jpeg">
-					<img src="fernando-pasik.png" height="180" width="180" alt="Fernando Pasik" />
-				</picture>
-			</div>
-			<h1 class="card-title">Fernando Pasik</h1>
-			<h2 class="card-subtitle">Front-End Engineer</h2>
+			{% include card-header.html %}
 		</header>
 
 		<section class="card-body">
-			<p>Hi! I'm a passionate developer working together with designers to always create <strong>the best User Experience</strong>.  I'm always eager to embrace the latest Web Standards and  to make sites and apps for mobile, desktop and <strong>all kind of devices</strong>.</p>
+			<p>Hi! I'm a passionate developer working together with designers to always create the best <strong>User Experience</strong>. I'm always eager to embrace the <strong>latest Web Standards</strong> and to make sites and apps for mobile, desktop and all kind of devices.</p>
 		</section>
 
 		<footer>
