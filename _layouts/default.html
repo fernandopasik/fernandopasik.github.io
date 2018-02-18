@@ -50,6 +50,13 @@
 			'hitCallback': function(){document.location = url;}
 		});
 	}
+
+	var links = document.querySelectorAll('.card-nav a');
+	Array.prototype.forEach.call(links, function (item) {
+  	item.addEventListener('click', function (e) {
+			trackOutboundLink(this.href)
+		});
+	});
 </script>
 
 <script defer src="modernizr.js"></script>
