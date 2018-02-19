@@ -39,19 +39,5 @@
 
 <amp-install-serviceworker src="{{ data.url }}/sw.js" layout="nodisplay"></amp-install-serviceworker>
 
-<script defer src="modernizr.js"></script>
-<script defer src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.7/svg4everybody.min.js"></script>
-<script>
-	function onLoadCallback() {
-		svg4everybody();
-	}
-
-	if (window.addEventListener)
-		window.addEventListener("load", onLoadCallback, false);
-	else if (window.attachEvent)
-		window.attachEvent("onload", onLoadCallback);
-	else window.onload = onLoadCallback;
-</script>
-
 </body>
 </html>
