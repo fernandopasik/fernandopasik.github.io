@@ -60,15 +60,6 @@
           display: none;
         }
       }
-
-      .sr-only {
-        .no-inlinesvg & {
-          position: static;
-          width: auto;
-          height: auto;
-          clip: rect(0, 0, 0, 0);
-        }
-      }
     }
   }
 }
