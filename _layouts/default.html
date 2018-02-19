@@ -17,8 +17,6 @@
 	<link rel="shortcut icon" href="/favicon.ico">
 	<meta name="theme-color" content="#006be3">
 
-	<link rel="stylesheet" href="style.css">
-
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
 	<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 	<script async custom-element="amp-font" src="https://cdn.ampproject.org/v0/amp-font-0.1.js"></script>
@@ -28,6 +26,10 @@
 		body {
 			font-family: "Ubuntu Mono", monospace;
 		}
+		{% capture styles %}
+			{% include style.scss %}
+		{% endcapture %}
+		{{ styles | scssify }}
 	</style>
 </head>
 
