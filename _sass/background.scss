@@ -7,7 +7,7 @@
   background: -o-radial-gradient(center, ellipse cover, $color-blue-1 0%, $color-blue-2 50%, $color-blue-3 100%);
   background: radial-gradient(center, ellipse cover, $color-blue-1 0%, $color-blue-2 50%, $color-blue-3 100%);
   padding: $base-line-grid;
-  min-height: 100%;
+  min-height: 100vh;
   display: flex;
   box-sizing: border-box;
   align-items: center;
