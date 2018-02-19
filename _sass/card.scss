@@ -38,6 +38,10 @@
       opacity: 0.6;
       transition: opacity 0.2s ease-in-out;
 
+      + a {
+        margin-left: $base-line-grid / 2;
+      }
+
       .no-inlinesvg & {
         display: block;
         width: auto;
@@ -46,10 +50,6 @@
       .touchevents &,
       .no-touchevents &:hover {
         opacity: 1;
-      }
-
-      + a {
-        margin-left: $base-line-grid / 2;
       }
 
       svg {
