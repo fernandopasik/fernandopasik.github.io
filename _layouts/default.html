@@ -20,6 +20,8 @@
 	<link rel="stylesheet" href="style.css">
 
 	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
+	<script async custom-element="amp-install-serviceworker"
+  src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
 
 </head>
 
@@ -27,18 +29,7 @@
 
 {{content}}
 
-<script>
-	if('serviceWorker' in navigator) {
-		navigator.serviceWorker.register('/sw.js', { scope: '/' })
-			.then(function(registration) {
-						console.log('Service Worker Registered');
-			});
-
-		navigator.serviceWorker.ready.then(function(registration) {
-			 console.log('Service Worker Ready');
-		});
-	}
-</script>
+<amp-install-serviceworker src="{{ site.url }}/sw.js" layout="nodisplay"></amp-install-serviceworker>
 
 <script defer src="modernizr.js"></script>
 <script defer src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.7/svg4everybody.min.js"></script>
