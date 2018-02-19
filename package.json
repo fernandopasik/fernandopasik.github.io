@@ -24,7 +24,7 @@
   },
   "dependencies": {
     "modernizr": "^3.5.0",
-    "normalize.css": "^7.0.0"
+    "normalize.css": "^8.0.0"
   },
   "devDependencies": {
     "stylelint-config-fernandopasik": "^0.1.3"
