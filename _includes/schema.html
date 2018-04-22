@@ -8,8 +8,9 @@
 	"image": "{{ data.url }}/{{ data.photo }}",
 	"description": "{{ data.description }}",
 	"url": "{{ data.url }}",
-	"sameAs": [{% for profile in data.profiles %}
-		"{{ profile.link }}",{% endfor %}
+	"sameAs": [
+		"{{data.profiles | map: 'link' | join: '",
+		"'}}"
 	]
 }
 </script>
