@@ -33,14 +33,16 @@
 </head>
 
 <body>
-	<amp-font layout="nodisplay" font-family="Ubuntu Mono"></amp-font>
 
 	{{content}}
 
 	<amp-font
 		layout="nodisplay"
 		font-family="Ubuntu Mono"
+		timeout="3000"
+		on-load-add-class="font-loaded"
 	></amp-font>
+
 	<amp-install-serviceworker src="{{ data.url }}/sw.js" layout="nodisplay"></amp-install-serviceworker>
 
 </body>
