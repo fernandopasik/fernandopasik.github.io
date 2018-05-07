@@ -35,9 +35,13 @@
 <body>
 	<amp-font layout="nodisplay" font-family="Ubuntu Mono"></amp-font>
 
-{{content}}
+	{{content}}
 
-<amp-install-serviceworker src="{{ data.url }}/sw.js" layout="nodisplay"></amp-install-serviceworker>
+	<amp-font
+		layout="nodisplay"
+		font-family="Ubuntu Mono"
+	></amp-font>
+	<amp-install-serviceworker src="{{ data.url }}/sw.js" layout="nodisplay"></amp-install-serviceworker>
 
 </body>
 </html>
