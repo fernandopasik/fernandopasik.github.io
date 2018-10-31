@@ -42,23 +42,14 @@
         margin-left: $base-line-grid / 2;
       }
 
-      .no-inlinesvg & {
-        display: block;
-        width: auto;
-      }
-
-      .touchevents &,
-      .no-touchevents &:hover {
+      .touch &,
+      .no-touch &:hover {
         opacity: 1;
       }
 
       svg {
         max-width: 100%;
         max-height: 100%;
-
-        .no-inlinesvg & {
-          display: none;
-        }
       }
     }
   }
