@@ -35,16 +35,10 @@
       display: inline-block;
       width: $base-line-grid * 1.5;
       height: $base-line-grid * 1.5;
-      opacity: 0.6;
       transition: opacity 0.2s ease-in-out;
 
       + a {
         margin-left: $base-line-grid / 2;
-      }
-
-      .touch &,
-      .no-touch &:hover {
-        opacity: 1;
       }
 
       svg {
