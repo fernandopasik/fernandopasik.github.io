@@ -1,10 +1,7 @@
 const CACHE_FILES = [
   '/',
   '/index.html',
-  '/style.css',
   '/icons.svg',
-  '/modernizr.js',
-  '/fernando-pasik.png',
   '/fernando-pasik.webp'
 ];
 
