@@ -20,6 +20,3 @@ profiles:
   - id: stackoverflow
     label: Stack Overflow Profile
     link: https://stackoverflow.com/users/1877754/fernandopasik?tab=profile
-  - id: googleplus
-    label: Google+ Profile
-    link: https://plus.google.com/101914036364944081553?rel=author
