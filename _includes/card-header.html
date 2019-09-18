@@ -1,17 +1,20 @@
 {% assign data = site.data.site %}
 <div class="card-photo">
-	<amp-img alt="{{ data.name }}"
+	<amp-img
+		alt="{{ data.name }}"
 		width="180"
 		height="180"
 		layout="responsive"
-		src="{{ data.photo2 }}">
-
-		<amp-img alt="{{ data.name }}"
+		src="{{ data.photo2 }}"
+	>
+		<amp-img
+			alt="{{ data.name }}"
 			fallback
 			width="180"
 			height="180"
 			layout="responsive"
-			src="{{ data.photo }}"></amp-img>
+			src="{{ data.photo }}"
+		></amp-img>
 	</amp-img>
 </div>
 <h1 class="card-title">{{ data.name }}</h1>

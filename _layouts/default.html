@@ -1,44 +1,108 @@
 <!DOCTYPE html>
 <html ⚡ lang="en">
-<head>
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="preconnect dns-prefetch" crossorigin href="https://fonts.gstatic.com" />
+		<link rel="preconnect dns-prefetch" crossorigin href="https://cdn.ampproject.org" />
 
-	<link rel="preconnect dns-prefetch" crossorigin href="https://fonts.gstatic.com">
-	<link rel="preconnect dns-prefetch" crossorigin href="https://cdn.ampproject.org">
+		<script async src="https://cdn.ampproject.org/v0.js"></script>
+		{% assign data = site.data.site %}
+		<title>{{ data.name }}: {{ data.jobTitle }}</title>
+		<meta name="description" content="{{ data.bio }}" />
+		<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1" />
 
+		<link rel="manifest" href="manifest.json" />
+		<link rel="canonical" href="{{ data.url }}" />
+		<link rel="apple-touch-icon" sizes="180x180" href="/{{ data.photo }}" />
+		<link rel="shortcut icon" href="/favicon.ico" />
+		<meta name="theme-color" content="#006be3" />
 
-	<script async src="https://cdn.ampproject.org/v0.js"></script>
-	{% assign data = site.data.site %}
-	<title>{{ data.name }}: {{ data.jobTitle }}</title>
-	<meta name="description" content="{{ data.bio }}">
-	<meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1">
+		<script
+			async
+			custom-element="amp-analytics"
+			src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"
+		></script>
+		<script
+			async
+			custom-element="amp-install-serviceworker"
+			src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"
+		></script>
 
-	<link rel="manifest" href="manifest.json">
-	<link rel="canonical" href="{{ data.url }}" />
-	<link rel="apple-touch-icon" sizes="180x180" href="/{{ data.photo }}">
-	<link rel="shortcut icon" href="/favicon.ico">
-	<meta name="theme-color" content="#006be3">
+		<style amp-boilerplate>
+			body {
+				-webkit-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+				-moz-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+				-ms-animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+				animation: -amp-start 8s steps(1, end) 0s 1 normal both;
+			}
+			@-webkit-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@-moz-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@-ms-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@-o-keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+			@keyframes -amp-start {
+				from {
+					visibility: hidden;
+				}
+				to {
+					visibility: visible;
+				}
+			}
+		</style>
+		<noscript
+			><style amp-boilerplate>
+				body {
+					-webkit-animation: none;
+					-moz-animation: none;
+					-ms-animation: none;
+					animation: none;
+				}
+			</style></noscript
+		>
 
-	<script async custom-element="amp-analytics" src="https://cdn.ampproject.org/v0/amp-analytics-0.1.js"></script>
-	<script async custom-element="amp-install-serviceworker" src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"></script>
+		<style amp-custom>
+			{% capture styles %}
+				{% include style.scss %}
+			{% endcapture %}
+			{{ styles | scssify }}
+		</style>
+	</head>
 
-	<style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+	<body>
+		{{ content }}
 
-	<style amp-custom>
-		{% capture styles %}
-			{% include style.scss %}
-		{% endcapture %}
-		{{ styles | scssify }}
-	</style>
-</head>
-
-<body>
-
-	{{content}}
-
-	<amp-install-serviceworker src="{{ data.url }}/sw.js" layout="nodisplay"></amp-install-serviceworker>
-
-</body>
+		<amp-install-serviceworker
+			src="{{ data.url }}/sw.js"
+			layout="nodisplay"
+		></amp-install-serviceworker>
+	</body>
 </html>

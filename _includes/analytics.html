@@ -1,21 +1,21 @@
 <amp-analytics type="googleanalytics">
-<script type="application/json">
-{
-	"vars": {
-		"account": "UA-5425682-4"
-	},
-	"triggers": {
-		"outboundLinks": {
-				"on": "click",
-				"selector": "a",
-				"request": "event",
-				"vars": {
-					"eventCategory": "outbound",
-					"eventAction": "click",
-					"eventLabel": "${outboundLink}"
-				}
+	<script type="application/json">
+		{
+			"vars": {
+				"account": "UA-5425682-4"
+			},
+			"triggers": {
+				"outboundLinks": {
+						"on": "click",
+						"selector": "a",
+						"request": "event",
+						"vars": {
+							"eventCategory": "outbound",
+							"eventAction": "click",
+							"eventLabel": "${outboundLink}"
+						}
+					}
 			}
-	}
-}
-</script>
+		}
+	</script>
 </amp-analytics>
