@@ -25,8 +25,8 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "stylelint": "^10.1.0",
-    "stylelint-config-recommended": "^2.2.0"
+    "stylelint": "^11.0.0",
+    "stylelint-config-recommended": "^3.0.0"
   },
   "engines": {
     "node": ">=8.0.0"
