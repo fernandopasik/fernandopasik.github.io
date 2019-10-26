@@ -7,19 +7,19 @@
   ],
   "homepage": "https://github.com/fernandopasik/fernandopasik.github.io",
   "bugs": "https://github.com/fernandopasik/fernandopasik.github.io/issues",
-  "license": "MIT",
-  "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
-  "contributors": [],
   "repository": {
     "type": "git",
     "url": "https://github.com/fernandopasik/fernandopasik.github.io.git"
   },
+  "license": "MIT",
+  "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
+  "contributors": [],
   "main": "",
   "scripts": {
     "postinstall": "npm run -s normalize",
+    "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss ",
-    "start": "jekyll serve",
-    "lint": "stylelint '**/*.scss' --syntax scss"
+    "start": "jekyll serve"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
