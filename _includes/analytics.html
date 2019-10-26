@@ -1,8 +1,12 @@
-<amp-analytics type="googleanalytics">
+{%- if jekyll.environment == 'production' and site.google_analytics -%}
+<amp-analytics type="gtag" data-credentials="include">
 	<script type="application/json">
 		{
-			"vars": {
-				"account": "UA-5425682-4"
+			"vars" : {
+				"gtag_id": "{{ site.google_analytics }}",
+				"config" : {
+					"{{ site.google_analytics }}": { "groups": "default" }
+				}
 			},
 			"triggers": {
 				"outboundLinks": {
@@ -19,3 +23,4 @@
 		}
 	</script>
 </amp-analytics>
+{%- endif -%}
