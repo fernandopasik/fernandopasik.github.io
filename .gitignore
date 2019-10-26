@@ -19,5 +19,5 @@ coverage
 .nyc_output
 
 # build and temp folders
-.sass-cache
+.jekyll-cache
 _site
