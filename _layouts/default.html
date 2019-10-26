@@ -34,14 +34,7 @@ layout: compress
 			src="https://cdn.ampproject.org/v0/amp-install-serviceworker-0.1.js"
 		></script>
 
-		{% include amp-boilerplate.html %}
-
-		<style amp-custom>
-			{% capture styles %}
-				{% include style.scss %}
-			{% endcapture %}
-			{{ styles | scssify }}
-		</style>
+		{% include amp-boilerplate.html %} {% include styles.html %}
 	</head>
 
 	<body>
