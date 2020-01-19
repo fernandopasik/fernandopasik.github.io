@@ -3,6 +3,12 @@
 	{
 		"@context": "https://schema.org",
 		"@type": "Person",
+		"address": {
+			"@type": "PostalAddress",
+			"addressLocality": "London",
+			"addressRegion": "Greater London",
+			"addressCountry": "United Kingdom"
+		},
 		"name": "{{ data.name }}",
 		"jobTitle": "{{ data.jobTitle }}",
 		"image": "{{ data.url }}/{{ data.photo }}",
