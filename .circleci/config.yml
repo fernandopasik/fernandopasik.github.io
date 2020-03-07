@@ -39,7 +39,7 @@ jobs:
       - *yarn_install
       - run:
           name: Lint
-          command: yarn lint --custom-formatter stylelint-junit-formatter > reports/junit/stylelint-results.xml
+          command: mkdir -p reports/junit && yarn lint --custom-formatter node_modules/stylelint-junit-formatter -o reports/junit/stylelint-results.xml
       - store_test_results:
           path: reports/junit
 
