@@ -49,13 +49,11 @@ jobs:
     steps:
       - checkout
       - run:
-          name: Prepare
-          command: |
-            gem install bundler
-            bundle install
+          name: Install Jekyll
+          command: gem install jekyll
       - run:
           name: Build
-          command: bundle exec jekyll build
+          command: jekyll build
           when: always
       - persist_to_workspace:
           root: .
