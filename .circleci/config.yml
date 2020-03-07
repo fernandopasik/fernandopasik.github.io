@@ -63,7 +63,6 @@ jobs:
             - _site
 
 workflows:
-  version: 2
   lint-build:
     jobs:
       - setup
