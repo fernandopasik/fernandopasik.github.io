@@ -2,23 +2,23 @@
 <amp-analytics type="gtag" data-credentials="include">
 	<script type="application/json">
 		{
-			"vars" : {
+			"vars": {
 				"gtag_id": "{{ site.google_analytics }}",
-				"config" : {
+				"config": {
 					"{{ site.google_analytics }}": { "groups": "default" }
 				}
 			},
 			"triggers": {
 				"outboundLinks": {
-						"on": "click",
-						"selector": "a",
-						"request": "event",
-						"vars": {
-							"eventCategory": "outbound",
-							"eventAction": "click",
-							"eventLabel": "${outboundLink}"
-						}
+					"on": "click",
+					"selector": "a",
+					"request": "event",
+					"vars": {
+						"eventCategory": "outbound",
+						"eventAction": "click",
+						"eventLabel": "${outboundLink}"
 					}
+				}
 			}
 		}
 	</script>
