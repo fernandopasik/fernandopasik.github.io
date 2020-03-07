@@ -19,7 +19,8 @@
     "postinstall": "npm run -s normalize",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss ",
-    "start": "jekyll serve"
+    "start": "jekyll serve",
+    "verify": "yarn lint && yarn build"
   },
   "dependencies": {
     "normalize.css": "^8.0.1"
