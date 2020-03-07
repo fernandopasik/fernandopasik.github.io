@@ -52,7 +52,9 @@ jobs:
       - *yarn_install
       - run:
           name: Prepare
-          command: bundle install
+          command: |
+            gem install bundler
+            bundle install
       - run:
           name: Build
           command: bundle exec jekyll build
