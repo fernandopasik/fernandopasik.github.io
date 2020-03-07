@@ -63,7 +63,7 @@ jobs:
             - _site
 
 workflows:
-  lint-build:
+  default:
     jobs:
       - setup
       - lint:
