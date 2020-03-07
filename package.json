@@ -15,6 +15,7 @@
   "contributors": [],
   "main": "",
   "scripts": {
+    "build": "jekyll build",
     "postinstall": "npm run -s normalize",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss ",
