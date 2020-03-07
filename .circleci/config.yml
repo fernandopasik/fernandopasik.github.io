@@ -51,8 +51,11 @@ jobs:
       - *restore_yarn_cache
       - *yarn_install
       - run:
+          name: Prepare
+          command: bundle install
+      - run:
           name: Build
-          command: yarn build
+          command: bundle exec jekyll build
           when: always
       - persist_to_workspace:
           root: .
