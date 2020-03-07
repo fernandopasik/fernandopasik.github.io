@@ -45,11 +45,9 @@ jobs:
 
   build:
     docker:
-      - image: circleci/node:lts
+      - image: circleci/ruby:latest-browsers-legacy
     steps:
       - checkout
-      - *restore_yarn_cache
-      - *yarn_install
       - run:
           name: Prepare
           command: |
