@@ -69,10 +69,10 @@ jobs:
           at: _site
       - run:
           name: Install lighthouse
-          command: yarn global add @lhci/cli
+          command: yarn add @lhci/cli
       - run:
           name: Run lighthouse
-          command: lhci autorun
+          command: yarn lhci autorun
 
 workflows:
   default:
