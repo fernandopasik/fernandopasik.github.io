@@ -68,9 +68,6 @@ jobs:
       - attach_workspace:
           at: _site
       - run:
-          name: Install Jekyll
-          command: yarn http-server -p 8000 -o -S _site
-      - run:
           name: Install lighthouse
           command: yarn global add @lhci/cli
       - run:
