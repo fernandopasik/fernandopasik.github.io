@@ -45,7 +45,7 @@ jobs:
 
   build:
     docker:
-      - image: circleci/ruby:latest-browsers-legacy
+      - image: circleci/ruby:latest-node-browsers
     steps:
       - checkout
       - run:
