@@ -20,4 +20,5 @@ coverage
 
 # build and temp folders
 .jekyll-cache
+.lighthouseci
 _site

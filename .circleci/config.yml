@@ -60,6 +60,23 @@ jobs:
           paths:
             - _site
 
+  lighthouse:
+    docker:
+      - image: circleci/node:lts-browsers
+    steps:
+      - checkout
+      - attach_workspace:
+          at: _site
+      - run:
+          name: Install Jekyll
+          command: yarn http-server -p 8000 -o -S _site
+      - run:
+          name: Install lighthouse
+          command: yarn global add @lhci/cli
+      - run:
+          name: Run lighthouse
+          command: lhci autorun
+
 workflows:
   default:
     jobs:
