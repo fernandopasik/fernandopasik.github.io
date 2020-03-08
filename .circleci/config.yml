@@ -87,3 +87,6 @@ workflows:
       - build:
           requires:
             - setup
+      - lighthouse:
+          requires:
+            - build
