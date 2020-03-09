@@ -18,7 +18,7 @@
     "build": "jekyll build",
     "postinstall": "npm run -s normalize",
     "lint": "stylelint '**/*.scss' --syntax scss",
-    "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss ",
+    "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss && prettier _sass/normalize.scss --write",
     "start": "jekyll serve",
     "verify": "yarn lint && yarn build"
   },
