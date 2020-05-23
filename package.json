@@ -22,9 +22,6 @@
     "start": "jekyll serve",
     "verify": "yarn lint && yarn build"
   },
-  "resolutions": {
-    "mkdirp": "^1.0.3"
-  },
   "dependencies": {
     "normalize.css": "^8.0.1"
   },
