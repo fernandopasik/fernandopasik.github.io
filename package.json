@@ -26,10 +26,10 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^8.3.5",
-    "@commitlint/config-conventional": "^8.3.4",
+    "@commitlint/cli": "^9.0.1",
+    "@commitlint/config-conventional": "^9.0.1",
     "husky": "^4.2.5",
-    "lint-staged": "^10.2.9",
+    "lint-staged": "^10.2.10",
     "prettier": "^2.0.5",
     "stylelint": "^13.6.0",
     "stylelint-config-prettier": "^8.0.1",
