@@ -9,3 +9,8 @@ google_analytics: UA-5425682-4
 
 sass:
   style: compressed
+
+plugins:
+  # already included in github, but to enable local dev
+  - jekyll-github-metadata
+  - jekyll-seo-tag
