@@ -52,6 +52,9 @@ jobs:
           name: Install Jekyll
           command: gem install jekyll
       - run:
+          name: Install Jekyll plugins
+          command: gem install jekyll-github-metadata jekyll-seo-tag
+      - run:
           name: Build
           command: jekyll build
           when: always
