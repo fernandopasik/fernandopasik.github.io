@@ -13,6 +13,18 @@ layout: default
 				<strong>latest Web Standards</strong> and to make sites and apps for mobile, desktop and all
 				kind of devices.
 			</p>
+			{% assign projects = site.github.public_repositories | where: "archived", false | sort:
+			"stargazers_count" | reverse %}
+
+			<h3>My open-source projects</h3>
+
+			<ul class="list">
+				{% for project in projects %}
+				<li>
+					<a href="{{ project.homepage | default: project.html_url }}">{{ project.name }}</a>
+				</li>
+				{% endfor %}
+			</ul>
 		</section>
 
 		<footer>{% include card-nav.html %}</footer>
