@@ -34,10 +34,7 @@
       width: $base-line-grid * 1.5;
       height: $base-line-grid * 1.5;
       transition: opacity 0.2s ease-in-out;
-
-      + a {
-        margin-left: $base-line-grid / 2;
-      }
+      padding: $base-line-grid / 4;
 
       svg {
         max-width: 100%;
