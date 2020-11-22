@@ -42,6 +42,15 @@
       }
     }
   }
+
+  &-body {
+    .list {
+      a {
+        display: block;
+        padding: ($base-line-grid / 4) 0;
+      }
+    }
+  }
 }
 
 @media (max-width: 440px) {
