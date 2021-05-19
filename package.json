@@ -16,7 +16,7 @@
   "main": "",
   "scripts": {
     "build": "jekyll build",
-    "format": "prettier --write ** ./* ./.??*",
+    "format": "prettier --no-error-on-unmatched-pattern --write ** ./* ./.??*",
     "postinstall": "npm run -s normalize",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss && prettier _sass/normalize.scss --write",

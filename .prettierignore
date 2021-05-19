@@ -3,7 +3,6 @@ yarn*.*
 .DS_Store
 .editorconfig
 .gitattributes
-.husky
 .*ignore
 LICENSE
 _site
