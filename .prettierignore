@@ -5,8 +5,8 @@ yarn*.*
 .gitattributes
 .*ignore
 LICENSE
-_site
 _layouts/compress.html
+_site
 .jekyll-cache
 CNAME
 robots.txt
