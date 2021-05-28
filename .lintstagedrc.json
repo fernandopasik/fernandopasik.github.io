@@ -1,3 +1,5 @@
 {
+  "*": ["prettier --check"],
+  "*.{js}": ["eslint", "jest --bail --findRelatedTests"],
   "*.{scss}": ["stylelint --syntax=scss"]
 }
