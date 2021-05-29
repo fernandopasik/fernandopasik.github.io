@@ -14,11 +14,11 @@
   "scripts": {
     "build": "jekyll build",
     "format": "prettier --no-error-on-unmatched-pattern --write ** ./* ./.??*",
-    "postinstall": "npm run -s normalize",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss && prettier _sass/normalize.scss --write",
-    "prepublishOnly": "pinst --disable",
+    "postinstall": "npm run -s normalize",
     "postpublish": "pinst --enable",
+    "prepublishOnly": "pinst --disable",
     "start": "jekyll serve",
     "verify": "yarn lint && yarn build"
   },
