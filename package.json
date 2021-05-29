@@ -16,7 +16,7 @@
     "format": "prettier --no-error-on-unmatched-pattern --write ** ./* ./.??*",
     "lint": "stylelint '**/*.scss' --syntax scss",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss && prettier _sass/normalize.scss --write",
-    "postinstall": "npm run -s normalize",
+    "postinstall": "husky install && npm run -s normalize",
     "postpublish": "pinst --enable",
     "prepublishOnly": "pinst --disable",
     "start": "jekyll serve",
