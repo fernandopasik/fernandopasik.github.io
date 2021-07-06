@@ -1,3 +1,3 @@
-# fernandopasik.github.io
+# Fernando Pasik
 
 My personal progressive web application
