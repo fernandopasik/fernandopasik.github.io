@@ -6,10 +6,3 @@ yarn.lock
 _layouts/compress.html
 _site
 .jekyll-cache
-CNAME
-robots.txt
-sitemap.xml
-*.ico
-*.png
-*.webp
-*.svg
