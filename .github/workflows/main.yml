@@ -72,6 +72,7 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: site
+          path: _site
       - run: |
           ls -la
           ls -la _site
