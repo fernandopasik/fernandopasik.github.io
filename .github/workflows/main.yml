@@ -49,6 +49,7 @@ jobs:
       - run: yarn install --frozen-lockfile
       - uses: ruby/setup-ruby@v1
         with:
+          ruby-version: '3.0'
           bundler-cache: true
       - run: yarn build
       - uses: actions/upload-artifact@v2
