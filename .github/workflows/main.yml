@@ -72,5 +72,9 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: site
-      - run: yarn add @lhci/cli
-      - run: yarn lhci autorun
+      - name: Run Lighthouse CI
+        run: |
+          yarn add @lhci/cli
+          yarn lhci autorun
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
