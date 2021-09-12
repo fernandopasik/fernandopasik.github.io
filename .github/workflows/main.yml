@@ -72,6 +72,9 @@ jobs:
       - uses: actions/download-artifact@v2
         with:
           name: site
+      - run: |
+          ls -la
+          ls -la _site
       - name: Run Lighthouse CI
         run: |
           yarn add @lhci/cli
