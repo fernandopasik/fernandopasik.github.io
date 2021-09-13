@@ -22,3 +22,4 @@ coverage
 .jekyll-cache
 .lighthouseci
 _site
+Gemfile.lock
