@@ -56,6 +56,8 @@ jobs:
           ruby-version: '3.0'
           bundler-cache: true
       - run: bundle exec jekyll build
+        env:
+          JEKYLL_GITHUB_TOKEN: ${{ secrets.JEKYLL_GITHUB_TOKEN }}
       - uses: actions/upload-artifact@v2
         with:
           name: site
