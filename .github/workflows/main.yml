@@ -55,7 +55,6 @@ jobs:
         with:
           ruby-version: '3.0'
           bundler-cache: true
-      - run: gem install jekyll jekyll-github-metadata jekyll-seo-tag
       - run: yarn build
       - uses: actions/upload-artifact@v2
         with:
