@@ -5,10 +5,8 @@
   "homepage": "https://github.com/fernandopasik/fernandopasik.github.io",
   "bugs": "https://github.com/fernandopasik/fernandopasik.github.io/issues",
   "author": "Fernando Pasik <fernando@pasik.com.ar> (https://fernandopasik.com)",
-  "contributors": [],
   "license": "MIT",
   "private": true,
-  "main": "",
   "keywords": [
     "website"
   ],
