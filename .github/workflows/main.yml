@@ -35,7 +35,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Lint
-        run: yarn lint --formatter stylelint-junit-formatter -o reports/lint-results.xml
+        run: yarn lint --custom-formatter stylelint-junit-formatter -o reports/lint-results.xml
       - name: Upload Report
         uses: actions/upload-artifact@v2
         if: always()
