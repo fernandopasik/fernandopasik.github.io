@@ -3,3 +3,4 @@ node_modules
 _site
 _sass/normalize.scss
 style.scss
+vendor
