@@ -14,7 +14,7 @@
     "build": "jekyll build",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "lint": "stylelint '**/*.scss' --syntax scss",
+    "lint": "stylelint '**/*.scss'",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss && prettier _sass/normalize.scss --write",
     "postinstall": "npm run -s normalize",
     "postpublish": "pinst --enable",
@@ -27,18 +27,18 @@
     "normalize.css": "^8.0.1"
   },
   "devDependencies": {
-    "@commitlint/cli": "^13.1.0",
-    "@commitlint/config-conventional": "^13.1.0",
-    "husky": "^7.0.2",
-    "lint-staged": "^11.1.2",
+    "@commitlint/cli": "^15.0.0",
+    "@commitlint/config-conventional": "^15.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "pinst": "^2.1.6",
-    "prettier": "^2.4.1",
-    "prettier-plugin-pkg": "^0.10.0",
-    "prettier-plugin-sh": "^0.7.1",
-    "stylelint": "^13.13.1",
-    "stylelint-config-prettier": "^8.0.2",
+    "prettier": "^2.5.0",
+    "prettier-plugin-pkg": "^0.11.1",
+    "prettier-plugin-sh": "^0.8.1",
+    "stylelint": "^14.1.0",
+    "stylelint-config-prettier": "^9.0.3",
     "stylelint-config-standard-scss": "^3.0.0",
     "stylelint-junit-formatter": "^0.2.2",
-    "stylelint-prettier": "^1.2.0"
+    "stylelint-prettier": "^2.0.0"
   }
 }
