@@ -2,21 +2,21 @@
 
 .bg {
   background: $color-blue-2;
-  background: -webkit-radial-gradient(
+  background: radial-gradient(
     center,
     ellipse cover,
     $color-blue-1 0%,
     $color-blue-2 50%,
     $color-blue-3 100%
   );
-  background: -moz-radial-gradient(
+  background: radial-gradient(
     center,
     ellipse cover,
     $color-blue-1 0%,
     $color-blue-2 50%,
     $color-blue-3 100%
   );
-  background: -o-radial-gradient(
+  background: radial-gradient(
     center,
     ellipse cover,
     $color-blue-1 0%,
