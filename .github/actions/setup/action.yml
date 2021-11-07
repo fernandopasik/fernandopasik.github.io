@@ -4,6 +4,11 @@ description: Setups latest Node LTS and installs dependencies
 runs:
   using: composite
   steps:
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        bundler-cache: true
+        ruby-version: '3.0'
     - name: Setup Node
       uses: actions/setup-node@v2
       with:
