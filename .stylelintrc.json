@@ -1,4 +1,7 @@
 {
   "extends": ["stylelint-config-standard-scss", "stylelint-prettier/recommended"],
-  "rules": {}
+  "rules": {
+    "alpha-value-notation": "number",
+    "color-function-notation": "legacy"
+  }
 }
