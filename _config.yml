@@ -2,7 +2,7 @@ title: Fernando Pasik - Front-End Engineer
 description: I'm a passionate developer working together with designers to always create the best User Experience. I'm always eager to embrace the latest Web Standards and to make sites and apps for mobile, desktop and all kind of devices
 url: https://fernandopasik.com
 
-exclude: ['LICENSE', 'node_modules', 'package.json', 'README.md', 'yarn.lock']
+exclude: ['LICENSE', 'node_modules', 'package.json', 'README.md', 'package-lock.json']
 
 google_analytics: UA-5425682-4
 

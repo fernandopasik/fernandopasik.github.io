@@ -24,7 +24,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Check Format
-        run: yarn format:check
+        run: npm run format:check
   lint:
     name: Lint
     runs-on: ubuntu-latest
@@ -35,7 +35,7 @@ jobs:
       - name: Setup
         uses: ./.github/actions/setup
       - name: Lint
-        run: yarn lint --custom-formatter 'node_modules/stylelint-junit-formatter' -o reports/lint-results.xml
+        run: npm run lint --custom-formatter 'node_modules/stylelint-junit-formatter' -o reports/lint-results.xml
       - name: Upload Report
         uses: actions/upload-artifact@v2
         if: always()
@@ -79,7 +79,7 @@ jobs:
           ls -la _site
       - name: Run Lighthouse CI
         run: |
-          yarn add @lhci/cli
-          yarn lhci autorun
+          npm i @lhci/cli
+          npm exec -c "lhci autorun"
         env:
           LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}
