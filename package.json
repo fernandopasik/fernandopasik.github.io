@@ -12,6 +12,7 @@
   ],
   "scripts": {
     "build": "jekyll build",
+    "clean": "del _site .jekyll-cache Gemfile.lock",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
     "lint": "stylelint '**/*.scss'",
@@ -29,6 +30,7 @@
   "devDependencies": {
     "@commitlint/cli": "^17.3.0",
     "@commitlint/config-conventional": "^17.3.0",
+    "del-cli": "^5.0.0",
     "husky": "^8.0.2",
     "lint-staged": "^13.0.4",
     "pinst": "^3.0.0",
