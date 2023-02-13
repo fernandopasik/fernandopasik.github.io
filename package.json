@@ -32,7 +32,7 @@
     "@commitlint/config-conventional": "^17.4.4",
     "del-cli": "^5.0.0",
     "husky": "^8.0.3",
-    "lint-staged": "^13.1.2",
+    "lint-staged": "^13.2.0",
     "pinst": "^3.0.0",
     "prettier": "^2.8.4",
     "prettier-plugin-pkg": "^0.17.1",
