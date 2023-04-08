@@ -1,3 +1,4 @@
+@use 'sass:math';
 @import 'settings/colors', 'settings/fonts';
 
 .card {
@@ -34,7 +35,7 @@
       width: $base-line-grid * 1.5;
       height: $base-line-grid * 1.5;
       transition: opacity 0.2s ease-in-out;
-      padding: calc($base-line-grid / 4);
+      padding: math.div($base-line-grid, 4);
 
       svg {
         max-width: 100%;
@@ -47,7 +48,7 @@
     .list {
       a {
         display: block;
-        padding: calc($base-line-grid / 4) 0;
+        padding: math.div($base-line-grid, 4) 0;
       }
     }
   }
@@ -55,7 +56,7 @@
 
 @media (max-width: 440px) {
   .card {
-    padding: $base-line-grid calc($base-line-grid / 2);
+    padding: $base-line-grid math.div($base-line-grid, 2);
 
     &-nav {
       a {
