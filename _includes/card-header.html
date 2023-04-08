@@ -1,21 +1,10 @@
 {% assign data = site.data.site %}
 <div class="card-photo">
-	<amp-img
-		alt="{{ data.name }}"
-		width="180"
-		height="180"
-		layout="responsive"
-		src="{{ data.photo_webp }}"
-	>
-		<amp-img
-			alt="{{ data.name }}"
-			fallback
-			width="180"
-			height="180"
-			layout="responsive"
-			src="{{ data.photo_png }}"
-		></amp-img>
-	</amp-img>
+	<picture>
+		<source srcset="{{ data.photo_webp }}" type="image/webp" />
+		<source srcset="{{ data.photo_png }}" type="image/jpeg" />
+		<img alt="{{ data.name }}" src="{{ data.photo_png }}" width="180" height="180" />
+	</picture>
 </div>
 <h1 class="card-title">{{ data.name }}</h1>
 <h2 class="card-subtitle">{{ data.jobTitle }}</h2>
