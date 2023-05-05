@@ -24,8 +24,7 @@ pnpm-lock.yaml
 yarn.lock
 
 # test files
-coverage
-.nyc_output
+/coverage
 
 # build and temp folders
 .jekyll-cache
