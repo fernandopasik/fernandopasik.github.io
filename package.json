@@ -34,7 +34,7 @@
     "husky": "^8.0.3",
     "lint-staged": "^13.2.1",
     "pinst": "^3.0.0",
-    "prettier": "^2.8.7",
+    "prettier": "^2.8.8",
     "prettier-plugin-pkg": "^0.17.1",
     "prettier-plugin-sh": "^0.12.8",
     "stylelint": "^15.5.0",
