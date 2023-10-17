@@ -18,9 +18,7 @@
     "lint": "stylelint '**/*.scss'",
     "normalize": "cp -rf node_modules/normalize.css/normalize.css _sass/normalize.scss && prettier _sass/normalize.scss --write",
     "postinstall": "npm run -s normalize",
-    "postpublish": "pinst --enable",
     "prepare": "husky install",
-    "prepublishOnly": "pinst --disable",
     "start": "jekyll serve",
     "verify": "npm run format:check && npm run lint && npm run build"
   },
@@ -33,7 +31,6 @@
     "del-cli": "^5.1.0",
     "husky": "^8.0.3",
     "lint-staged": "^15.0.1",
-    "pinst": "^3.0.0",
     "prettier": "^3.0.3",
     "prettier-plugin-pkg": "^0.18.0",
     "prettier-plugin-sh": "^0.13.1",
