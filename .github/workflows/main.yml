@@ -58,6 +58,8 @@ jobs:
         with:
           ruby-version: '3'
           bundler-cache: true
+      - name: Update Gem
+        run: gem update --system
       - name: Build
         run: bundle exec jekyll build
         env:
