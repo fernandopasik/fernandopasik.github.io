@@ -35,7 +35,7 @@ jobs:
       - name: Setup Node
         uses: fernandopasik/actions/setup-node@main
       - name: Lint
-        run: npm run lint -- --format junit -o reports/lint-results.xml
+        run: npm run lint -- --custom-formatter 'node_modules/stylelint-junit-formatter/index.js' -o reports/lint-results.xml
       - name: Publish Report
         uses: dorny/test-reporter@v1
         if: always()
