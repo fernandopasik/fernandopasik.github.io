@@ -23,8 +23,10 @@ lerna-debug.log*
 pnpm-lock.yaml
 yarn.lock
 
-# build and temp folders
-.jekyll-cache
-.lighthouseci
+# jekyll
 _site
+.jekyll-cache
+
+# build and temp folders
+.lighthouseci
 Gemfile.lock
