@@ -1,2 +1,6 @@
-@import 'normalize', 'settings/colors', 'settings/fonts', 'layout', 'typography', 'background',
-  'card', 'list';
+@use 'normalize';
+@use 'layout';
+@use 'typography';
+@use 'background';
+@use 'card';
+@use 'list';

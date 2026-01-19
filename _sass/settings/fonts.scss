@@ -1,4 +1,6 @@
+@use 'colors';
+
 $base-font-size: 16px;
-$base-font-color: $color-black;
+$base-font-color: colors.$color-black;
 $base-line-height: 1.5;
 $base-line-grid: $base-font-size * $base-line-height;

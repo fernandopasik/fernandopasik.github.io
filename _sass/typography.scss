@@ -1,14 +1,15 @@
-@import 'settings/colors', 'settings/fonts';
+@use 'settings/colors';
+@use 'settings/fonts';
 
 body {
-  font-size: $base-font-size;
-  line-height: $base-line-height;
+  font-size: fonts.$base-font-size;
+  line-height: fonts.$base-line-height;
   font-family: monospace;
 }
 
 %margins {
-  margin-top: $base-line-grid;
-  margin-bottom: $base-line-grid;
+  margin-top: fonts.$base-line-grid;
+  margin-bottom: fonts.$base-line-grid;
 }
 
 p {
@@ -20,7 +21,7 @@ h1 {
 
   font-size: 3em;
   font-weight: 400;
-  line-height: $base-line-grid * 2;
+  line-height: fonts.$base-line-grid * 2;
 }
 
 h2 {
@@ -37,7 +38,7 @@ h2 {
 
   h2 {
     font-size: 1.5em;
-    line-height: $base-line-grid;
+    line-height: fonts.$base-line-grid;
   }
 }
 

@@ -1,17 +1,18 @@
-@import 'settings/colors', 'settings/fonts';
+@use 'settings/colors';
+@use 'settings/fonts';
 
 .card {
   box-sizing: border-box;
   margin: 0 auto;
   max-width: 500px;
-  padding: $base-line-grid;
+  padding: fonts.$base-line-grid;
   text-align: center;
-  background: $color-white;
-  background: rgba($color-white, 0.35);
+  background: colors.$color-white;
+  background: rgba(colors.$color-white, 0.35);
   border-radius: 5px;
   box-shadow:
-    0 5px 13px rgba($color-black, 0.4),
-    inset 0 2px 2px rgba($color-white, 0.4);
+    0 5px 13px rgba(colors.$color-black, 0.4),
+    inset 0 2px 2px rgba(colors.$color-white, 0.4);
 
   &-title {
     margin-bottom: 0;
@@ -26,17 +27,17 @@
     width: 180px;
     height: 180px;
     margin: 0 auto;
-    border: 1px solid $color-black;
+    border: 1px solid colors.$color-black;
     overflow: hidden;
   }
 
   &-nav {
     a {
       display: inline-block;
-      width: $base-line-grid * 1.5;
-      height: $base-line-grid * 1.5;
+      width: fonts.$base-line-grid * 1.5;
+      height: fonts.$base-line-grid * 1.5;
       transition: opacity 0.2s ease-in-out;
-      padding: $base-line-grid * 0.25;
+      padding: fonts.$base-line-grid * 0.25;
 
       svg {
         max-width: 100%;
@@ -49,7 +50,7 @@
     .list {
       a {
         display: block;
-        padding: ($base-line-grid * 0.25) 0;
+        padding: (fonts.$base-line-grid * 0.25) 0;
       }
     }
   }
@@ -57,12 +58,12 @@
 
 @media (max-width: 440px) {
   .card {
-    padding: $base-line-grid ($base-line-grid * 0.5);
+    padding: fonts.$base-line-grid (fonts.$base-line-grid * 0.5);
 
     &-nav {
       a {
-        width: $base-line-grid;
-        height: $base-line-grid;
+        width: fonts.$base-line-grid;
+        height: fonts.$base-line-grid;
       }
     }
   }
