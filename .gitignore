@@ -27,6 +27,8 @@ yarn.lock
 _site
 .jekyll-cache
 
-# build and temp folders
+# lighthouse
 .lighthouseci
+
+# build and temp folders
 Gemfile.lock
