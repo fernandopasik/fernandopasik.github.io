@@ -1,6 +1,7 @@
 .husky/_
 /LICENSE
 **/_layouts/compress.html
+.well-known/security.txt
 _site
 .jekyll-cache
 vendor

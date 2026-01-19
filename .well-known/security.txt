@@ -1,0 +1,4 @@
+Contact: https://github.com/fernandopasik/fernandopasik.github.io/security/advisories/new
+Policy: https://github.com/fernandopasik/fernandopasik.github.io/security/policy
+Preferred-Languages: en, es
+Canonical: https://fernandopasik.com/.well-known/security.txt

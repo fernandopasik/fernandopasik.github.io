@@ -3,6 +3,7 @@ description: I'm a passionate developer working together with designers to alway
 url: https://fernandopasik.com
 
 exclude: ['LICENSE', 'node_modules', 'package.json', 'README.md', 'package-lock.json']
+include: ['.well-known']
 
 google_analytics: G-2MWB7NGC05
 
