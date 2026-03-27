@@ -3,4 +3,5 @@
 **/_layouts/compress.html
 _site
 .jekyll-cache
+vendor
 security.txt
