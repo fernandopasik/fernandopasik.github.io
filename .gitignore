@@ -30,5 +30,11 @@ _site
 # lighthouse
 .lighthouseci
 
-# build and temp folders
+# Ruby
+.bundle
+*.gem
+vendor
 Gemfile.lock
+
+# Sass
+.sass-cache
