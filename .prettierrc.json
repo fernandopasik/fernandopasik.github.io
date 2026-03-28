@@ -1,4 +1,4 @@
 {
-  "plugins": ["prettier-plugin-pkg", "prettier-plugin-sh"],
+  "plugins": ["prettier-plugin-organize-imports", "prettier-plugin-pkg", "prettier-plugin-sh"],
   "singleQuote": true
 }
