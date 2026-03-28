@@ -1,15 +1,17 @@
 import markdown from '@eslint/markdown';
 import prettier from 'eslint-config-prettier';
-import ymlPlugin from 'eslint-plugin-yml';
+import { configs as ymlConfigs } from 'eslint-plugin-yml';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-  ...ymlPlugin.configs['flat/recommended'],
-  ...ymlPlugin.configs['flat/prettier'],
   {
     extends: [markdown.configs.recommended, markdown.configs.processor],
     files: ['**/*.md'],
     language: 'markdown/gfm',
+  },
+  {
+    extends: [ymlConfigs['flat/standard'], ymlConfigs['flat/prettier']],
+    files: ['*.yaml', '*.yml'],
   },
   prettier,
 ]);
