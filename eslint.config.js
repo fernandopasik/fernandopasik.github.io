@@ -10,7 +10,7 @@ export default defineConfig([
     language: 'markdown/gfm',
   },
   {
-    extends: [ymlConfigs['flat/standard'], ymlConfigs['flat/prettier']],
+    extends: [ymlConfigs.standard, ymlConfigs.prettier],
     files: ['*.yaml', '*.yml'],
   },
   prettier,
