@@ -34,7 +34,6 @@ _site
 .bundle
 *.gem
 vendor
-Gemfile.lock
 
 # Sass
 .sass-cache
