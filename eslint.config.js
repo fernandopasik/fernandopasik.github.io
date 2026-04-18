@@ -4,6 +4,7 @@ import { configs as ymlConfigs } from 'eslint-plugin-yml';
 import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
+  { ignores: ['_site', '.jekyll-cache'] },
   {
     extends: [markdown.configs.recommended, markdown.configs.processor],
     files: ['**/*.md'],
