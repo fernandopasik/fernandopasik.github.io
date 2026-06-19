@@ -14,6 +14,7 @@ include:
 google_analytics: G-2MWB7NGC05
 
 sass:
+  quiet_deps: true
   style: compressed
 
 plugins:
