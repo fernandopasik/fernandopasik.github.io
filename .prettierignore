@@ -2,6 +2,8 @@
 /LICENSE
 **/_layouts/compress.html
 *.lock
+*.png
+*.webp
 _site
 .jekyll-cache
 vendor
