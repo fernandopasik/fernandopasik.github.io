@@ -1,6 +1,7 @@
 @import 'settings/colors', 'settings/fonts';
 
 body {
+  color: $base-font-color;
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-family: $base-font-family;
