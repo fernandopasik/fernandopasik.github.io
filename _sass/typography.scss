@@ -3,7 +3,7 @@
 body {
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-family: monospace;
+  font-family: $base-font-family;
 }
 
 %margins {
